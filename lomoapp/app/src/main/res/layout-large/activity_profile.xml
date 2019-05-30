@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.davenguyen.lomoapp.ProfileActivity">
+
+    <!--Include toolbar-->
+    <include layout="@layout/tool_bar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="Account Details"
+            android:textColor="@color/colorBlack"
+            android:textSize="35sp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_avatar"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_account_circle_blue_grey_400_48dp"
+            app:civ_border_color="@color/colorGray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+                <TextView
+                    style="@style/blackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginBottom="15dp"
+                    android:text="Email: " />
+
+                <TextView
+                    style="@style/blackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:text="Password: " />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/blackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Display Name: " />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+                <TextView
+                    android:id="@+id/profilePg_email"
+                    style="@style/blackTextViewField"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Default " />
+
+                <TextView
+                    android:id="@+id/profilePg_password"
+                    style="@style/blackTextViewField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:text="*******" />
+
+                <TextView
+                    android:id="@+id/profilePg_displayName"
+                    style="@style/blackTextViewField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Defalut " />
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="40dp">
+
+
+                <ImageButton
+                    android:id="@+id/profile_changeEmail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/edit_black_24dp"
+                    android:layout_marginBottom="21dp"/>
+
+                <ImageButton
+                    android:id="@+id/profile_changePassword"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/edit_black_24dp"
+                    android:layout_marginBottom="15dp"/>
+
+                <ImageButton
+                    android:id="@+id/profile_changeName"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/edit_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/profile_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="Log out" />
+
+        <FrameLayout
+            android:id="@+id/profile_frag_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

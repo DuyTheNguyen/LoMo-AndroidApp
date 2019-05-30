@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Only one item from the group can be checked -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="Home" />
+    </group>
+
+    <item android:title="Genre"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/nav_action"
+                android:title="Action" />
+            <item
+                android:id="@+id/nav_comedy"
+                android:title="Comedy" />
+            <item
+                android:id="@+id/nav_romance"
+                android:title="Romance" />
+            <item
+                android:id="@+id/nav_scifi"
+                android:title="Sci-fi" />
+        </menu>
+    </item>
+
+    <item android:title="Account"
+        android:checkableBehavior="none">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_circle_white_24dp"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_movieList"
+                android:icon="@drawable/ic_featured_play_list_white_24dp"
+                android:title="My Movies' List" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_white_24dp"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+
+</menu>

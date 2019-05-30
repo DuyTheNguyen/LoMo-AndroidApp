@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.davenguyen.lomoapp.SignUpActivity"
+    android:gravity="center">
+
+
+    <!--fake view for auto focused-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+    </LinearLayout>,
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textSize="50dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/signup_email"
+            android:inputType="textEmailAddress"
+            android:hint="@string/ed_email"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            style="@style/editText1"
+            />
+        <EditText
+            android:id="@+id/signup_password"
+            android:inputType="textPassword"
+            android:hint="@string/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/editText1"
+            />
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:inputType="text"
+            android:hint="@string/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/editText1"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+    <TextView
+        android:id="@+id/signup_login"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/option_login"
+        android:textColor="#2196F3"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</LinearLayout>

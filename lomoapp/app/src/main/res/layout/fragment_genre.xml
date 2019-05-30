@@ -1,0 +1,14 @@
+
+<!-- TODO: Update blank fragment layout -->
+<android.support.v7.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.davenguyen.lomoapp.GenreFragment"
+    android:id="@+id/fg_movie_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+</android.support.v7.widget.RecyclerView>
+
+
+

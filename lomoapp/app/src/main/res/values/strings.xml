@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LoMo</string>
+    <string name="title_activity_login">LoMo</string>
+
+    <!--Hints for edit text(italic)-->
+    <string name="ed_email"><i>Email Address</i></string>
+    <string name="ed_password"><i>Password</i></string>
+    <string name="ed_name"><i>Name</i></string>
+
+    <!--Sign in and Sign up page(underlined)-->
+    <string name="option_signup"><u>New to LoMo? Click here to sign up</u></string>
+    <string name="option_login"><u>Already have account? Click here to log in</u></string>
+
+
+    <!--Strings related to navigation bar-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- About Page -->
+    <string name="developer">The Duy Nguyen - 101036886</string>
+    <string name="designer">The Duy Nguyen - 101036886</string>
+    <string name="version">1.0.0</string>
+    <string name="privacypolicy">LoMo guarantees the information of users is secret. No one can access or obtain users information.</string>
+    <string name="termofuse">This application is used for education purpose only</string>
+    <string name="search_hint">Search</string>
+    <string name="popular_movies">Popular Movies on LoMo</string>
+
+</resources>
